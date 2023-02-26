@@ -1,146 +1,357 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="res/css/style.css">
-    <link rel="stylesheet" href="res/css/media.css">
-    <link rel="stylesheet"
-          href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
-    <title>Denis Novak</title>
+  <meta charset="UTF-8">
+  <meta name="viewport"  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230226193838"/>
+  <link rel="stylesheet" href="./res/styles/style.min.css?_v=20230226193838">
+  <title>Denis Novik | UX/UI designer</title>
 </head>
 <body>
-
-<div class="popup">
-    <nav class="lang menu">
-        <a href="">Home</a>
-        <a href="#about_me">About me</a>
-        <a href="#skills">Skills</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contacts</a>
+<div class="wrap">
+    <header class="header">
+    <div class="container header__container">
+        <nav class="header-nav">
+            <ul class="header-nav__list">
+                <li class="header-nav__item"><a href="#hero" class="header-nav__link _lang home">Home</a></li>
+                <li class="header-nav__item"><a href="#about" class="header-nav__link _lang about">About me</a></li>
+                <li class="header-nav__item"><a href="#skills" class="header-nav__link _lang skills">Skills</a></li>
+                <li class="header-nav__item"><a href="#works" class="header-nav__link  _lang portfolio">Portfolio</a></li>
+                <li class="header-nav__item"><a href="#contact" class="header-nav__link  _lang contact">Contacts</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    <div class="menu">
+    <nav class="menu-nav">
+      <a href="#hero" class="menu-nav__link _lang home">Home</a>
+      <a href="#about" class="menu-nav__link _lang about">About me</a>
+      <a href="#skills" class="menu-nav__link _lang skills">Skills</a>
+      <a href="#works" class="menu-nav__link _lang portfolio">Portfolio</a>
+      <a href="#contact" class="menu-nav__link _lang contact">Contacts</a>
     </nav>
-    <div class="btns">
-        <span class="close">
-            &#10006
-        </span>
-        <p class="language_btn2"><span class="ru">RU</span> | <span class="eng pressed">ENG</span></p>
+  <div class="menu-local">
+    <span class="menu-local__btn _eng">ENG</span> <strong>|</strong> <span class="menu-local__btn _ua">UA</span>
+  </div>
+</div>
+    <div class="loader">
+    <div class="loader-container">
+        <p class="loader-text">Loading</p>
     </div>
 </div>
-
-<div class="body_wrap">
-
-    <header class="header">
-
-        <nav class="lang  header_nav">
-            <a href="#">Home</a>
-            <a href="#about_me">About me</a>
-            <a href="#skills">Skills</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contacts</a>
-        </nav>
-
-        <div class="header_body">
-            <div class="lang header_body_title _anim_item">
-                <h1>Denis Novak</h1>
-                <p>UX | UI designer
-                    24 years old, Minsk</p>
-                <p class="language_btn"><span class="ru">RU</span> | <span class="eng pressed">ENG</span></p>
-                <div class="burger_button _anim_item">
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
+    <main class="content">
+        <section class="hero" id="hero">
+    <div class="hero-container container">
+        <div class="hero-head">
+            <div class="hero-head__info">
+                <div class="hero-title">
+                    <h1 class="hero-title__text _lang name">Denis <br> Novik</h1>
+                </div>
+                <div class="hero-desc">
+                    <p class="hero-desc__text _lang desc">
+                        UX | UI designer<br>
+                        24 years old, Kiev
+                    </p>
+                </div>
+                <div class="hero-local">
+                    <span class="hero-local__btn _eng">ENG</span> <strong>|</strong> <span class="hero-local__btn _ua">UA</span>
                 </div>
             </div>
-            <div class="header_body_img">
-                <img src="res/img/header_img.png" alt="man" class="img1">
-                <img src="res/img/man2.png" alt="man" class="img2">
+            <div class="hero-head__burger">
+                <div class="hero-head__burger-line"></div>
+                <div class="hero-head__burger-line"></div>
+                <div class="hero-head__burger-line"></div>
             </div>
         </div>
-    </header>
-
-    <div id="about_me" class="lang  about_me full_screen">
-        <h2 class="_anim_item">About me</h2>
-
-        <p class="_anim_item">
-            Hi, I'm Denis – UX/UI designer from Minsk.
-            I'm interested in design and everything connected with it.
-        </p>
-
-
-        <p class="p _anim_item">
-            I'm studying at courses "Web and mobile design
-            interfaces" in IT-Academy.
-        </p>
-
-
-        <p class="_anim_item">
-            Ready to implement excellent projects
-            with wonderful people.
-        </p>
-
-    </div>
-
-    <div id="skills" class="skills">
-        <div class="lang skills_title">
-            <h2 class="_anim_item">Skills</h2>
-            <p class="_anim_item">I work in such programs as</p>
-        </div>
-        <div class="programs_skills">
-            <img src="res/img/skills/photoshop.png" alt="photoshop" class="_anim_item">
-            <img src="res/img/skills/ilustrator.png" alt="illustrator" class="_anim_item">
-            <img src="res/img/skills/after_effects.png" alt="after effects" class="_anim_item">
-            <img src="res/img/skills/figma.png" alt="figma" class="_anim_item">
+        <div class="hero-poster">
+            <picture>
+                <source srcset="./res/images/hero/hero-poster-mob.jpg" media="(max-width:543px)">
+                <img src="./res/images/hero/hero-poster.jpg" alt="Denis Novik" class="hero-poster__img">
+            </picture>
         </div>
     </div>
-
-    <div id="portfolio" class="lang portfolio full_screen">
-        <h2 class="_anim_item">Portfolio</h2>
-
-        <div class="project">
-            <img src="res/img/portfolio/fashion.png" alt="fashion" class="_anim_item">
-            <a href="#" class="_anim_item">Online fashion store - Homepage</a>
+</section>
+        <section class="about" id="about">
+    <div class="about-container container">
+        <div class="title">
+            <h2 class="title-text _lang about">About me</h2>
         </div>
-
-        <div class="project">
-            <img src="res/img/portfolio/reebook.png" alt="reebook" class="_anim_item">
-            <a href="#" class="_anim_item">Reebok Store - Concept</a>
+        <div class="about-list">
+            <p class="about-item _lang fact1">
+                Hi, I'm Denis – UX/UI designer from Kiev.<br>
+                I'm interested in design and everything connected with it.
+            </p>
+            <p class="about-item _lang fact2">
+                I'm studying at courses "Web and mobile design <br>
+                interfaces" in IT-Academy.
+            </p>
+            <p class="about-item _lang fact3">
+                Ready to implement excellent projects <br>
+                with wonderful people.
+            </p>
         </div>
-
-        <div class="project">
-            <img src="res/img/portfolio/braun.png" alt="braun" class="_anim_item">
-            <a href="#" class="_anim_item">Braun Landing Page - Concept</a>
-        </div>
-
     </div>
-
-    <footer id="contact" class="contact">
-        <div class="lang contact_title">
-            <h2>Contacts</h2>
-            <p>
-                Want to know more or just chat?
+</section>
+        <section class="skills" id="skills">
+    <div class="skills-container container">
+        <div class="title">
+            <h2 class="title-text _lang skills">Skills</h2>
+        </div>
+        <div class="skills-message">
+            <p class="skills-message__text _lang skillMsg">I work in such programs as</p>
+        </div>
+        <ul class="skills-list">
+            <li class="skills-item">
+                <div class="skills-item__poster">
+                    <img src="./res/images/skills/phs.svg" alt="photoshop" class="skills-item__poster-img">
+                </div>
+                <h3 class="skills-item__title">
+                    Adobe<br>
+                    Photoshop
+                </h3>
+                <div class="skills-item__rating">
+                    <div class="skills-item__rating-star">
+                        <svg class="skills-item__rating-star__svg skills-item__rating-star__svg--black" width="22"
+                             height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.89241 0.85958C10.1923 -0.0606967 11.4942 -0.0606959 11.794 0.859581L13.5451 6.23398C13.6792 6.64561 14.063 6.92418 14.4959 6.92418H20.1567C21.1261 6.92418 21.5284 8.16521 20.7434 8.73398L16.1685 12.0486C15.8171 12.3033 15.67 12.7555 15.8044 13.1682L17.553 18.5349C17.853 19.4557 16.7997 20.2227 16.0155 19.6544L11.4299 16.3321C11.0799 16.0784 10.6065 16.0784 10.2565 16.3321L5.67095 19.6544C4.88669 20.2227 3.8334 19.4557 4.13343 18.5348L5.882 13.1682C6.01645 12.7555 5.86937 12.3033 5.51791 12.0486L0.943038 8.73398C0.158031 8.16521 0.560362 6.92418 1.52976 6.92418H7.19051C7.62344 6.92418 8.0072 6.64561 8.14132 6.23398L9.89241 0.85958Z"
+                                  fill="#E5E5E5"/>
+                        </svg>
+                    </div>
+                    <div class="skills-item__rating-star">
+                        <svg class="skills-item__rating-star__svg skills-item__rating-star__svg--black" width="22"
+                             height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.89241 0.85958C10.1923 -0.0606967 11.4942 -0.0606959 11.794 0.859581L13.5451 6.23398C13.6792 6.64561 14.063 6.92418 14.4959 6.92418H20.1567C21.1261 6.92418 21.5284 8.16521 20.7434 8.73398L16.1685 12.0486C15.8171 12.3033 15.67 12.7555 15.8044 13.1682L17.553 18.5349C17.853 19.4557 16.7997 20.2227 16.0155 19.6544L11.4299 16.3321C11.0799 16.0784 10.6065 16.0784 10.2565 16.3321L5.67095 19.6544C4.88669 20.2227 3.8334 19.4557 4.13343 18.5348L5.882 13.1682C6.01645 12.7555 5.86937 12.3033 5.51791 12.0486L0.943038 8.73398C0.158031 8.16521 0.560362 6.92418 1.52976 6.92418H7.19051C7.62344 6.92418 8.0072 6.64561 8.14132 6.23398L9.89241 0.85958Z"
+                                  fill="#E5E5E5"/>
+                        </svg>
+                    </div>
+                    <div class="skills-item__rating-star">
+                        <svg class="skills-item__rating-star__svg skills-item__rating-star__svg--black" width="22"
+                             height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.89241 0.85958C10.1923 -0.0606967 11.4942 -0.0606959 11.794 0.859581L13.5451 6.23398C13.6792 6.64561 14.063 6.92418 14.4959 6.92418H20.1567C21.1261 6.92418 21.5284 8.16521 20.7434 8.73398L16.1685 12.0486C15.8171 12.3033 15.67 12.7555 15.8044 13.1682L17.553 18.5349C17.853 19.4557 16.7997 20.2227 16.0155 19.6544L11.4299 16.3321C11.0799 16.0784 10.6065 16.0784 10.2565 16.3321L5.67095 19.6544C4.88669 20.2227 3.8334 19.4557 4.13343 18.5348L5.882 13.1682C6.01645 12.7555 5.86937 12.3033 5.51791 12.0486L0.943038 8.73398C0.158031 8.16521 0.560362 6.92418 1.52976 6.92418H7.19051C7.62344 6.92418 8.0072 6.64561 8.14132 6.23398L9.89241 0.85958Z"
+                                  fill="#E5E5E5"/>
+                        </svg>
+                    </div>
+                    <div class="skills-item__rating-star">
+                        <svg class="skills-item__rating-star__svg skills-item__rating-star__svg--black" width="22"
+                             height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.89241 0.85958C10.1923 -0.0606967 11.4942 -0.0606959 11.794 0.859581L13.5451 6.23398C13.6792 6.64561 14.063 6.92418 14.4959 6.92418H20.1567C21.1261 6.92418 21.5284 8.16521 20.7434 8.73398L16.1685 12.0486C15.8171 12.3033 15.67 12.7555 15.8044 13.1682L17.553 18.5349C17.853 19.4557 16.7997 20.2227 16.0155 19.6544L11.4299 16.3321C11.0799 16.0784 10.6065 16.0784 10.2565 16.3321L5.67095 19.6544C4.88669 20.2227 3.8334 19.4557 4.13343 18.5348L5.882 13.1682C6.01645 12.7555 5.86937 12.3033 5.51791 12.0486L0.943038 8.73398C0.158031 8.16521 0.560362 6.92418 1.52976 6.92418H7.19051C7.62344 6.92418 8.0072 6.64561 8.14132 6.23398L9.89241 0.85958Z"
+                                  fill="#E5E5E5"/>
+                        </svg>
+                    </div>
+                    <div class="skills-item__rating-star">
+                        <svg class="skills-item__rating-star--svg" width="22" height="20" viewBox="0 0 22 20"
+                             fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.89241 0.85958C10.1923 -0.0606967 11.4942 -0.0606959 11.794 0.859581L13.5451 6.23398C13.6792 6.64561 14.063 6.92418 14.4959 6.92418H20.1567C21.1261 6.92418 21.5284 8.16521 20.7434 8.73398L16.1685 12.0486C15.8171 12.3033 15.67 12.7555 15.8044 13.1682L17.553 18.5349C17.853 19.4557 16.7997 20.2227 16.0155 19.6544L11.4299 16.3321C11.0799 16.0784 10.6065 16.0784 10.2565 16.3321L5.67095 19.6544C4.88669 20.2227 3.8334 19.4557 4.13343 18.5348L5.882 13.1682C6.01645 12.7555 5.86937 12.3033 5.51791 12.0486L0.943038 8.73398C0.158031 8.16521 0.560362 6.92418 1.52976 6.92418H7.19051C7.62344 6.92418 8.0072 6.64561 8.14132 6.23398L9.89241 0.85958Z"
+                                  fill="#E5E5E5"/>
+                        </svg>
+                    </div>
+                </div>
+            </li>
+            <li class="skills-item">
+                <div class="skills-item__poster">
+                    <img src="./res/images/skills/ai.svg" alt="photoshop" class="skills-item__poster-img">
+                </div>
+                <h3 class="skills-item__title">
+                    Adobe<br>
+                    Illustrator
+                </h3>
+                <div class="skills-item__rating">
+                    <div class="skills-item__rating-star">
+                        <svg class="skills-item__rating-star__svg skills-item__rating-star__svg--black" width="22"
+                             height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.89241 0.85958C10.1923 -0.0606967 11.4942 -0.0606959 11.794 0.859581L13.5451 6.23398C13.6792 6.64561 14.063 6.92418 14.4959 6.92418H20.1567C21.1261 6.92418 21.5284 8.16521 20.7434 8.73398L16.1685 12.0486C15.8171 12.3033 15.67 12.7555 15.8044 13.1682L17.553 18.5349C17.853 19.4557 16.7997 20.2227 16.0155 19.6544L11.4299 16.3321C11.0799 16.0784 10.6065 16.0784 10.2565 16.3321L5.67095 19.6544C4.88669 20.2227 3.8334 19.4557 4.13343 18.5348L5.882 13.1682C6.01645 12.7555 5.86937 12.3033 5.51791 12.0486L0.943038 8.73398C0.158031 8.16521 0.560362 6.92418 1.52976 6.92418H7.19051C7.62344 6.92418 8.0072 6.64561 8.14132 6.23398L9.89241 0.85958Z"
+                                  fill="#E5E5E5"/>
+                        </svg>
+                    </div>
+                    <div class="skills-item__rating-star">
+                        <svg class="skills-item__rating-star__svg skills-item__rating-star__svg--black" width="22"
+                             height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.89241 0.85958C10.1923 -0.0606967 11.4942 -0.0606959 11.794 0.859581L13.5451 6.23398C13.6792 6.64561 14.063 6.92418 14.4959 6.92418H20.1567C21.1261 6.92418 21.5284 8.16521 20.7434 8.73398L16.1685 12.0486C15.8171 12.3033 15.67 12.7555 15.8044 13.1682L17.553 18.5349C17.853 19.4557 16.7997 20.2227 16.0155 19.6544L11.4299 16.3321C11.0799 16.0784 10.6065 16.0784 10.2565 16.3321L5.67095 19.6544C4.88669 20.2227 3.8334 19.4557 4.13343 18.5348L5.882 13.1682C6.01645 12.7555 5.86937 12.3033 5.51791 12.0486L0.943038 8.73398C0.158031 8.16521 0.560362 6.92418 1.52976 6.92418H7.19051C7.62344 6.92418 8.0072 6.64561 8.14132 6.23398L9.89241 0.85958Z"
+                                  fill="#E5E5E5"/>
+                        </svg>
+                    </div>
+                    <div class="skills-item__rating-star">
+                        <svg class="skills-item__rating-star__svg skills-item__rating-star__svg--black" width="22"
+                             height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.89241 0.85958C10.1923 -0.0606967 11.4942 -0.0606959 11.794 0.859581L13.5451 6.23398C13.6792 6.64561 14.063 6.92418 14.4959 6.92418H20.1567C21.1261 6.92418 21.5284 8.16521 20.7434 8.73398L16.1685 12.0486C15.8171 12.3033 15.67 12.7555 15.8044 13.1682L17.553 18.5349C17.853 19.4557 16.7997 20.2227 16.0155 19.6544L11.4299 16.3321C11.0799 16.0784 10.6065 16.0784 10.2565 16.3321L5.67095 19.6544C4.88669 20.2227 3.8334 19.4557 4.13343 18.5348L5.882 13.1682C6.01645 12.7555 5.86937 12.3033 5.51791 12.0486L0.943038 8.73398C0.158031 8.16521 0.560362 6.92418 1.52976 6.92418H7.19051C7.62344 6.92418 8.0072 6.64561 8.14132 6.23398L9.89241 0.85958Z"
+                                  fill="#E5E5E5"/>
+                        </svg>
+                    </div>
+                    <div class="skills-item__rating-star">
+                        <svg class="skills-item__rating-star__svg skills-item__rating-star__svg--black" width="22"
+                             height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.89241 0.85958C10.1923 -0.0606967 11.4942 -0.0606959 11.794 0.859581L13.5451 6.23398C13.6792 6.64561 14.063 6.92418 14.4959 6.92418H20.1567C21.1261 6.92418 21.5284 8.16521 20.7434 8.73398L16.1685 12.0486C15.8171 12.3033 15.67 12.7555 15.8044 13.1682L17.553 18.5349C17.853 19.4557 16.7997 20.2227 16.0155 19.6544L11.4299 16.3321C11.0799 16.0784 10.6065 16.0784 10.2565 16.3321L5.67095 19.6544C4.88669 20.2227 3.8334 19.4557 4.13343 18.5348L5.882 13.1682C6.01645 12.7555 5.86937 12.3033 5.51791 12.0486L0.943038 8.73398C0.158031 8.16521 0.560362 6.92418 1.52976 6.92418H7.19051C7.62344 6.92418 8.0072 6.64561 8.14132 6.23398L9.89241 0.85958Z"
+                                  fill="#E5E5E5"/>
+                        </svg>
+                    </div>
+                    <div class="skills-item__rating-star">
+                        <svg class="skills-item__rating-star--svg" width="22" height="20" viewBox="0 0 22 20"
+                             fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.89241 0.85958C10.1923 -0.0606967 11.4942 -0.0606959 11.794 0.859581L13.5451 6.23398C13.6792 6.64561 14.063 6.92418 14.4959 6.92418H20.1567C21.1261 6.92418 21.5284 8.16521 20.7434 8.73398L16.1685 12.0486C15.8171 12.3033 15.67 12.7555 15.8044 13.1682L17.553 18.5349C17.853 19.4557 16.7997 20.2227 16.0155 19.6544L11.4299 16.3321C11.0799 16.0784 10.6065 16.0784 10.2565 16.3321L5.67095 19.6544C4.88669 20.2227 3.8334 19.4557 4.13343 18.5348L5.882 13.1682C6.01645 12.7555 5.86937 12.3033 5.51791 12.0486L0.943038 8.73398C0.158031 8.16521 0.560362 6.92418 1.52976 6.92418H7.19051C7.62344 6.92418 8.0072 6.64561 8.14132 6.23398L9.89241 0.85958Z"
+                                  fill="#E5E5E5"/>
+                        </svg>
+                    </div>
+                </div>
+            </li>
+            <li class="skills-item">
+                <div class="skills-item__poster">
+                    <img src="./res/images/skills/ae.svg" alt="photoshop" class="skills-item__poster-img">
+                </div>
+                <h3 class="skills-item__title">
+                    Adobe<br>
+                    After Effects
+                </h3>
+                <div class="skills-item__rating">
+                    <div class="skills-item__rating-star">
+                        <svg class="skills-item__rating-star__svg skills-item__rating-star__svg--black" width="22"
+                             height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.89241 0.85958C10.1923 -0.0606967 11.4942 -0.0606959 11.794 0.859581L13.5451 6.23398C13.6792 6.64561 14.063 6.92418 14.4959 6.92418H20.1567C21.1261 6.92418 21.5284 8.16521 20.7434 8.73398L16.1685 12.0486C15.8171 12.3033 15.67 12.7555 15.8044 13.1682L17.553 18.5349C17.853 19.4557 16.7997 20.2227 16.0155 19.6544L11.4299 16.3321C11.0799 16.0784 10.6065 16.0784 10.2565 16.3321L5.67095 19.6544C4.88669 20.2227 3.8334 19.4557 4.13343 18.5348L5.882 13.1682C6.01645 12.7555 5.86937 12.3033 5.51791 12.0486L0.943038 8.73398C0.158031 8.16521 0.560362 6.92418 1.52976 6.92418H7.19051C7.62344 6.92418 8.0072 6.64561 8.14132 6.23398L9.89241 0.85958Z"
+                                  fill="#E5E5E5"/>
+                        </svg>
+                    </div>
+                    <div class="skills-item__rating-star">
+                        <svg class="skills-item__rating-star__svg skills-item__rating-star__svg--black" width="22"
+                             height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.89241 0.85958C10.1923 -0.0606967 11.4942 -0.0606959 11.794 0.859581L13.5451 6.23398C13.6792 6.64561 14.063 6.92418 14.4959 6.92418H20.1567C21.1261 6.92418 21.5284 8.16521 20.7434 8.73398L16.1685 12.0486C15.8171 12.3033 15.67 12.7555 15.8044 13.1682L17.553 18.5349C17.853 19.4557 16.7997 20.2227 16.0155 19.6544L11.4299 16.3321C11.0799 16.0784 10.6065 16.0784 10.2565 16.3321L5.67095 19.6544C4.88669 20.2227 3.8334 19.4557 4.13343 18.5348L5.882 13.1682C6.01645 12.7555 5.86937 12.3033 5.51791 12.0486L0.943038 8.73398C0.158031 8.16521 0.560362 6.92418 1.52976 6.92418H7.19051C7.62344 6.92418 8.0072 6.64561 8.14132 6.23398L9.89241 0.85958Z"
+                                  fill="#E5E5E5"/>
+                        </svg>
+                    </div>
+                    <div class="skills-item__rating-star">
+                        <svg class="skills-item__rating-star__svg skills-item__rating-star__svg--black" width="22"
+                             height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.89241 0.85958C10.1923 -0.0606967 11.4942 -0.0606959 11.794 0.859581L13.5451 6.23398C13.6792 6.64561 14.063 6.92418 14.4959 6.92418H20.1567C21.1261 6.92418 21.5284 8.16521 20.7434 8.73398L16.1685 12.0486C15.8171 12.3033 15.67 12.7555 15.8044 13.1682L17.553 18.5349C17.853 19.4557 16.7997 20.2227 16.0155 19.6544L11.4299 16.3321C11.0799 16.0784 10.6065 16.0784 10.2565 16.3321L5.67095 19.6544C4.88669 20.2227 3.8334 19.4557 4.13343 18.5348L5.882 13.1682C6.01645 12.7555 5.86937 12.3033 5.51791 12.0486L0.943038 8.73398C0.158031 8.16521 0.560362 6.92418 1.52976 6.92418H7.19051C7.62344 6.92418 8.0072 6.64561 8.14132 6.23398L9.89241 0.85958Z"
+                                  fill="#E5E5E5"/>
+                        </svg>
+                    </div>
+                    <div class="skills-item__rating-star">
+                        <svg class="skills-item__rating-star__svg skills-item__rating-star__svg--black" width="22"
+                             height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.89241 0.85958C10.1923 -0.0606967 11.4942 -0.0606959 11.794 0.859581L13.5451 6.23398C13.6792 6.64561 14.063 6.92418 14.4959 6.92418H20.1567C21.1261 6.92418 21.5284 8.16521 20.7434 8.73398L16.1685 12.0486C15.8171 12.3033 15.67 12.7555 15.8044 13.1682L17.553 18.5349C17.853 19.4557 16.7997 20.2227 16.0155 19.6544L11.4299 16.3321C11.0799 16.0784 10.6065 16.0784 10.2565 16.3321L5.67095 19.6544C4.88669 20.2227 3.8334 19.4557 4.13343 18.5348L5.882 13.1682C6.01645 12.7555 5.86937 12.3033 5.51791 12.0486L0.943038 8.73398C0.158031 8.16521 0.560362 6.92418 1.52976 6.92418H7.19051C7.62344 6.92418 8.0072 6.64561 8.14132 6.23398L9.89241 0.85958Z"
+                                  fill="#E5E5E5"/>
+                        </svg>
+                    </div>
+                    <div class="skills-item__rating-star">
+                        <svg class="skills-item__rating-star--svg" width="22" height="20" viewBox="0 0 22 20"
+                             fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.89241 0.85958C10.1923 -0.0606967 11.4942 -0.0606959 11.794 0.859581L13.5451 6.23398C13.6792 6.64561 14.063 6.92418 14.4959 6.92418H20.1567C21.1261 6.92418 21.5284 8.16521 20.7434 8.73398L16.1685 12.0486C15.8171 12.3033 15.67 12.7555 15.8044 13.1682L17.553 18.5349C17.853 19.4557 16.7997 20.2227 16.0155 19.6544L11.4299 16.3321C11.0799 16.0784 10.6065 16.0784 10.2565 16.3321L5.67095 19.6544C4.88669 20.2227 3.8334 19.4557 4.13343 18.5348L5.882 13.1682C6.01645 12.7555 5.86937 12.3033 5.51791 12.0486L0.943038 8.73398C0.158031 8.16521 0.560362 6.92418 1.52976 6.92418H7.19051C7.62344 6.92418 8.0072 6.64561 8.14132 6.23398L9.89241 0.85958Z"
+                                  fill="#E5E5E5"/>
+                        </svg>
+                    </div>
+                </div>
+            </li>
+            <li class="skills-item">
+                <div class="skills-item__poster">
+                    <img src="./res/images/skills/figma.svg" alt="photoshop" class="skills-item__poster-img">
+                </div>
+                <h3 class="skills-item__title">Figma</h3>
+                <div class="skills-item__rating">
+                    <div class="skills-item__rating-star">
+                        <svg class="skills-item__rating-star__svg skills-item__rating-star__svg--black" width="22"
+                             height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.89241 0.85958C10.1923 -0.0606967 11.4942 -0.0606959 11.794 0.859581L13.5451 6.23398C13.6792 6.64561 14.063 6.92418 14.4959 6.92418H20.1567C21.1261 6.92418 21.5284 8.16521 20.7434 8.73398L16.1685 12.0486C15.8171 12.3033 15.67 12.7555 15.8044 13.1682L17.553 18.5349C17.853 19.4557 16.7997 20.2227 16.0155 19.6544L11.4299 16.3321C11.0799 16.0784 10.6065 16.0784 10.2565 16.3321L5.67095 19.6544C4.88669 20.2227 3.8334 19.4557 4.13343 18.5348L5.882 13.1682C6.01645 12.7555 5.86937 12.3033 5.51791 12.0486L0.943038 8.73398C0.158031 8.16521 0.560362 6.92418 1.52976 6.92418H7.19051C7.62344 6.92418 8.0072 6.64561 8.14132 6.23398L9.89241 0.85958Z"
+                                  fill="#E5E5E5"/>
+                        </svg>
+                    </div>
+                    <div class="skills-item__rating-star">
+                        <svg class="skills-item__rating-star__svg skills-item__rating-star__svg--black" width="22"
+                             height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.89241 0.85958C10.1923 -0.0606967 11.4942 -0.0606959 11.794 0.859581L13.5451 6.23398C13.6792 6.64561 14.063 6.92418 14.4959 6.92418H20.1567C21.1261 6.92418 21.5284 8.16521 20.7434 8.73398L16.1685 12.0486C15.8171 12.3033 15.67 12.7555 15.8044 13.1682L17.553 18.5349C17.853 19.4557 16.7997 20.2227 16.0155 19.6544L11.4299 16.3321C11.0799 16.0784 10.6065 16.0784 10.2565 16.3321L5.67095 19.6544C4.88669 20.2227 3.8334 19.4557 4.13343 18.5348L5.882 13.1682C6.01645 12.7555 5.86937 12.3033 5.51791 12.0486L0.943038 8.73398C0.158031 8.16521 0.560362 6.92418 1.52976 6.92418H7.19051C7.62344 6.92418 8.0072 6.64561 8.14132 6.23398L9.89241 0.85958Z"
+                                  fill="#E5E5E5"/>
+                        </svg>
+                    </div>
+                    <div class="skills-item__rating-star">
+                        <svg class="skills-item__rating-star__svg skills-item__rating-star__svg--black" width="22"
+                             height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.89241 0.85958C10.1923 -0.0606967 11.4942 -0.0606959 11.794 0.859581L13.5451 6.23398C13.6792 6.64561 14.063 6.92418 14.4959 6.92418H20.1567C21.1261 6.92418 21.5284 8.16521 20.7434 8.73398L16.1685 12.0486C15.8171 12.3033 15.67 12.7555 15.8044 13.1682L17.553 18.5349C17.853 19.4557 16.7997 20.2227 16.0155 19.6544L11.4299 16.3321C11.0799 16.0784 10.6065 16.0784 10.2565 16.3321L5.67095 19.6544C4.88669 20.2227 3.8334 19.4557 4.13343 18.5348L5.882 13.1682C6.01645 12.7555 5.86937 12.3033 5.51791 12.0486L0.943038 8.73398C0.158031 8.16521 0.560362 6.92418 1.52976 6.92418H7.19051C7.62344 6.92418 8.0072 6.64561 8.14132 6.23398L9.89241 0.85958Z"
+                                  fill="#E5E5E5"/>
+                        </svg>
+                    </div>
+                    <div class="skills-item__rating-star">
+                        <svg class="skills-item__rating-star__svg skills-item__rating-star__svg--black" width="22"
+                             height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.89241 0.85958C10.1923 -0.0606967 11.4942 -0.0606959 11.794 0.859581L13.5451 6.23398C13.6792 6.64561 14.063 6.92418 14.4959 6.92418H20.1567C21.1261 6.92418 21.5284 8.16521 20.7434 8.73398L16.1685 12.0486C15.8171 12.3033 15.67 12.7555 15.8044 13.1682L17.553 18.5349C17.853 19.4557 16.7997 20.2227 16.0155 19.6544L11.4299 16.3321C11.0799 16.0784 10.6065 16.0784 10.2565 16.3321L5.67095 19.6544C4.88669 20.2227 3.8334 19.4557 4.13343 18.5348L5.882 13.1682C6.01645 12.7555 5.86937 12.3033 5.51791 12.0486L0.943038 8.73398C0.158031 8.16521 0.560362 6.92418 1.52976 6.92418H7.19051C7.62344 6.92418 8.0072 6.64561 8.14132 6.23398L9.89241 0.85958Z"
+                                  fill="#E5E5E5"/>
+                        </svg>
+                    </div>
+                    <div class="skills-item__rating-star">
+                        <svg class="skills-item__rating-star--svg" width="22" height="20" viewBox="0 0 22 20"
+                             fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.89241 0.85958C10.1923 -0.0606967 11.4942 -0.0606959 11.794 0.859581L13.5451 6.23398C13.6792 6.64561 14.063 6.92418 14.4959 6.92418H20.1567C21.1261 6.92418 21.5284 8.16521 20.7434 8.73398L16.1685 12.0486C15.8171 12.3033 15.67 12.7555 15.8044 13.1682L17.553 18.5349C17.853 19.4557 16.7997 20.2227 16.0155 19.6544L11.4299 16.3321C11.0799 16.0784 10.6065 16.0784 10.2565 16.3321L5.67095 19.6544C4.88669 20.2227 3.8334 19.4557 4.13343 18.5348L5.882 13.1682C6.01645 12.7555 5.86937 12.3033 5.51791 12.0486L0.943038 8.73398C0.158031 8.16521 0.560362 6.92418 1.52976 6.92418H7.19051C7.62344 6.92418 8.0072 6.64561 8.14132 6.23398L9.89241 0.85958Z"
+                                  fill="#E5E5E5"/>
+                        </svg>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+        <div class="works" id="works">
+    <div class="works-container container">
+        <div class="title">
+            <h2 class="title-text _lang portfolio">Portfolio</h2>
+        </div>
+        <ul class="works-list">
+            <li class="works-item">
+                <div class="works-item__poster">
+                    <img src="./res/images/works/fashion.jpg" alt="fashion" class="works-item__poster-img">
+                </div>
+                <a href="#" class="works-item__link">Online fashion store - Homepage</a>
+            </li>
+            <li class="works-item">
+                <div class="works-item__poster">
+                    <img src="./res/images/works/reebok.jpg" alt="reebok" class="works-item__poster-img">
+                </div>
+                <a href="#" class="works-item__link">Reebok Store - Concept</a>
+            </li>
+            <li class="works-item">
+                <div class="works-item__poster">
+                    <img src="./res/images/works/braun.jpg" alt="braun" class="works-item__poster-img">
+                </div>
+                <a href="#" class="works-item__link">Braun Landing Page - Concept</a>
+            </li>
+        </ul>
+    </div>
+</div>
+    </main>
+    <footer class="footer" id="contact">
+    <div class="footer-container container">
+        <div class="footer-contact">
+            <div class="title">
+                <h2 class="title-text _lang contact">Сontact</h2>
+            </div>
+            <p class="footer-contact__desc _lang contactMsg">
+                Want to know more or just chat? <br>
                 You are welcome!
             </p>
-            <a href="#">Send Message</a>
+            <button class="footer-contact__btn _lang contactBtn">Send Message</button>
         </div>
-        <div class="links">
-            <a href="#"><img src="res/img/links/linkedIn.png" alt="linkedIn"></a>
-            <a href="#"><img src="res/img/links/instagram.png" alt="instagram"></a>
-            <a href="#"><img src="res/img/links/be.png" alt="be"></a>
-            <a href="#"><img src="res/img/links/basket.png" alt="basket"></a>
+        <div class="footer-info">
+            <div class="footer-media">
+                <nav class="footer-media__list">
+                    <a href="#" class="footer-media__item">
+                        <img src="./res/images/media/in.svg" alt="linkedin" class="footer-media__item-img">
+                    </a>
+                    <a href="#" class="footer-media__item">
+                        <img src="./res/images/media/inst.svg" alt="instagram" class="footer-media__item-img">
+                    </a>
+                    <a href="#" class="footer-media__item">
+                        <img src="./res/images/media/be.svg" alt="behance" class="footer-media__item-img">
+                    </a>
+                    <a href="#" class="footer-media__item">
+                        <img src="./res/images/media/dribble.svg" alt="dribble" class="footer-media__item-img">
+                    </a>
+                </nav>
+            </div>
+            <span class="footer-message _lang contactMedia">
+                Like me on <br>
+                LinkedIn, Instagram, Behance, Dribble
+            </span>
         </div>
-
-        <div class="lang copyright"><p>Like me on
-            LinkedIn, Instagram, Behance, Dribble</p></div>
-    </footer>
-
-
+    </div>
+</footer>
 </div>
-
-
-<script src="res/js/popup.js"></script>
-<script src="res/js/lang_selector.js"></script>
-<script src="res/js/scroll_anim.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230226193838"></script>
+<script src="./res/scripts/app.min.js?_v=20230226193838"></script>
 </body>
 </html>
