@@ -1,0 +1,40 @@
+.works{
+  width: auto;
+  background: var(--grey-back-color);
+  padding: 112.93px 0 96.07px 0;
+  &-container{
+    @include flex-col-cent;
+    gap: 47px;
+  }
+
+  &-list{
+    @include flex-col-cent;
+    gap:99.09px ;
+    overflow: hidden;
+  }
+
+  &-item{
+    @include flex-col-cent;
+    gap:44.88px;
+
+    &__poster{
+      width: 100%;
+      &-img{
+        object-fit: contain;
+        max-width: 100%;
+      }
+    }
+
+    &__link{
+      font-family: 'Gilroy-Medium',sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.22;
+      text-align: center;
+      color: var(--black-text-color);
+      &:hover{
+        text-decoration-line: underline;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+@@include('parts/head.html',{
+"title":"Denis Novik | UX/UI designer"
+})
+<body>
+<div class="wrap">
+    @@include('./parts/header.html',{})
+    @@include('./parts/menu.html',{})
+    @@include('./parts/loader.html',{})
+    <main class="content">
+        @@include('./parts/hero.html',{})
+        @@include('./parts/about.html',{})
+        @@include('./parts/skills.html',{})
+        @@include('./parts/works.html',{})
+    </main>
+    @@include('./parts/footer.html',{})
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="./res/scripts/app.min.js"></script>
+</body>
+</html>

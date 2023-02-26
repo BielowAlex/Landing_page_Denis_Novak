@@ -1,0 +1,88 @@
+.footer{
+  width: auto;
+  padding: 114.24px 0 123.19px 0;
+  &-container{
+    @include flex-col-cent;
+    gap: 85.78px;
+  }
+
+  &-contact{
+    @include flex-col-cent;
+    gap: 29.6px;
+
+    &__desc{
+      font-family: 'Gilroy-Medium', sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.22;
+      text-align: center;
+      color: var(--black-text-color);
+    }
+
+    &__btn{
+      font-family: 'Gilroy-Bold', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 1.22;
+      text-align: center;
+      color: var(--btn-text-color);
+      background: var(--btn-back-color);
+      border: 1px solid var(--btn-back-color);
+      padding: 13px 28.08px;
+      border-radius: 50px;
+      transition: all .5s linear;
+
+      &:hover{
+        background: var(--btn-text-color);
+        color: var(--btn-back-color);
+      }
+    }
+  }
+
+  &-info{
+    @include flex-col-cent;
+    gap: 45.06px;
+  }
+
+  &-media{
+    width: 100%;
+    &__list{
+      @include flex-alc-jsb;
+      width: 100%;
+      gap: 60.17px;
+    }
+
+    &__item{
+      opacity: 1;
+      transition: opacity .5s linear;
+
+      &-img{
+        width: 40px;
+        height: 40px;
+      }
+      &:hover{
+        opacity: .5;
+      }
+    }
+  }
+
+  &-message{
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.22;
+    text-align: center;
+    color: var(--grey-text-color);
+  }
+}
+
+@media screen and (max-width: 425px){
+  .footer{
+    &-media{
+      &__list{
+        gap: 30.17px;
+      }
+    }
+  }
+
+}

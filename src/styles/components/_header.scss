@@ -1,0 +1,40 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: var(--white-back-color);
+  z-index: 9999;
+  border-bottom: 1px solid var(--header-border-color);
+
+  &-container {
+    @include flex-cent;
+  }
+
+  &-nav {
+    padding: 32.99px 0;
+    &__list {
+      @include flex-alc-jsb;
+      gap: 55px;
+    }
+
+    &__link {
+      display: block;
+      font-family: 'Gilroy-Bold', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 1.22;
+      color: var(--header-link-color);
+      transition: all .5s ease-in-out;
+
+      &:hover {
+        color: var(--header-link-hover-color);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .header {
+    display: none;
+  }
+}

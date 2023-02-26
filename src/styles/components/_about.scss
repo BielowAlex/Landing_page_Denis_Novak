@@ -1,0 +1,23 @@
+.about{
+  width: auto;
+  background: var(--grey-back-color);
+  &-container{
+    @include flex-col-cent;
+    gap: 22.94px;
+    padding: 120px 0;
+  }
+
+  &-list{
+    @include flex-col-cent;
+    gap: 40px;
+  }
+
+  &-item{
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    text-align: center;
+    color: var(--black-text-color);
+  }
+}

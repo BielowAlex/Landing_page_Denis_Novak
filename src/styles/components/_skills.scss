@@ -1,0 +1,73 @@
+.skills{
+  &-container{
+    @include flex-col-cent;
+    gap: 69.1px;
+  }
+
+  &-message{
+    overflow: hidden;
+    &__text{
+      font-family: 'Gilroy-Medium',sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.22;
+      text-align: center;
+      color: var(--black-text-color);
+    }
+  }
+
+  &-list{
+    @include flex-alc-jsb;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 40px;
+    overflow: hidden;
+  }
+
+  &-item{
+    @include flex-col-cent;
+    gap: 23px;
+
+    &__poster{
+      max-width: 89px;
+      &-img{
+        object-fit: contain;
+      }
+    }
+
+    &__title{
+      font-family: 'Gilroy-Bold', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.21;
+      text-align: center;
+      color:var(--grey-text-color);
+    }
+
+    &__rating{
+      @include flex-alc-jsb;
+      gap: 9.02px;
+
+      &-star{
+        &__svg{
+          path{
+            fill:var(--grey-text-color);
+          }
+        }
+        &__svg--black{
+          path{
+            fill:var(--black-text-color);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 390px){
+  .skills{
+    &-list{
+      @include flex-col-cent;
+    }
+  }
+}
